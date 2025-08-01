@@ -15,7 +15,7 @@ module.exports = {
         burningRed: '#EF4444',
         deepSpaceNavy: '#0A0B1E'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
