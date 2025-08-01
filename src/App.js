@@ -33,26 +33,11 @@ const SKILLS = [
 ];
 
 const CERTIFICATIONS = [
-  {
-    title: 'Cisco Certified - Ethical Hacking',
-    url: '#',
-  },
-  {
-    title: 'Cisco Certified - CCNA Enterprise Networking & Security',
-    url: '#',
-  },
-  {
-    title: 'AWS Cloud Foundations (AWS Academy)',
-    url: '#',
-  },
-  {
-    title: 'Linux Fundamentals (Hack The Box)',
-    url: '#',
-  },
-  {
-    title: 'AICTE Cisco Virtual Internship Program 2023',
-    url: '#',
-  },
+  { title: 'Cisco Certified - Ethical Hacking', url: '#' },
+  { title: 'Cisco Certified - CCNA Enterprise Networking & Security', url: '#' },
+  { title: 'AWS Cloud Foundations (AWS Academy)', url: '#' },
+  { title: 'Linux Fundamentals (Hack The Box)', url: '#' },
+  { title: 'AICTE Cisco Virtual Internship Program 2023', url: '#' },
 ];
 
 const PROJECTS = [
@@ -77,7 +62,6 @@ const PROJECTS = [
 ];
 
 const App = () => {
-  // Theme state: respect system preference, persist in localStorage
   const getInitialTheme = () => {
     if (typeof window !== 'undefined' && window.localStorage) {
       const storedPrefs = window.localStorage.getItem('color-theme');
@@ -89,7 +73,7 @@ const App = () => {
         return 'dark';
       }
     }
-    return 'dark'; // default
+    return 'dark';
   };
 
   const [theme, setTheme] = useState(getInitialTheme);
@@ -130,7 +114,6 @@ const App = () => {
           </button>
         </div>
 
-        {/* Mobile menu button */}
         <button 
           aria-label="Menu" 
           onClick={toggleMenu} 
@@ -163,7 +146,6 @@ const App = () => {
 
       {/* Main Content */}
       <main className="pt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Hero Section */}
         <header className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
@@ -255,7 +237,6 @@ const App = () => {
           <h2 className="text-3xl font-semibold mb-6 border-l-4 border-[var(--accent-primary)] pl-3">
             Contact Me
           </h2>
-
           <form 
             className="flex flex-col space-y-4 bg-white/10 p-6 rounded-lg backdrop-blur-md border border-white/20"
             onSubmit={(e) => {
