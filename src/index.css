@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #1f2937;
+  --accent-primary: #059669;
+  --accent-secondary: #2563eb;
+  --accent-tertiary: #d946ef;
+  --accent-cta: #dc2626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+} /* This closing brace is required! */
+
+[data-theme="dark"] {
+  --bg-primary: #0a0b1e;
+  --text-primary: #ffffff;
+  --accent-primary: #4ade80;
+  --accent-secondary: #a855f7;
+  --accent-tertiary: #ec4899;
+  --accent-cta: #ef4444;
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --text-primary: #1f2937;
+  --accent-primary: #059669;
+  --accent-secondary: #2563eb;
+  --accent-tertiary: #d946ef;
+  --accent-cta: #dc2626;
+}
