@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg-primary: #ffffff;
-  --text-primary: #1f2937;
-  --accent-primary: #059669;
-  --accent-secondary: #2563eb;
-  --accent-tertiary: #d946ef;
-  --accent-cta: #dc2626;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -21,7 +12,7 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: var(--bg-primary);
   color: var(--text-primary);
-} /* This closing brace is required! */
+}
 
 [data-theme="dark"] {
   --bg-primary: #0a0b1e;
